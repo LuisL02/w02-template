@@ -1,4 +1,4 @@
-package de.tum.aet.devops25.w03.model;
+package de.tum.aet.devops26.w02.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDate;

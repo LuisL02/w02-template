@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   server:
-    image: ghcr.io/aet-devops25/in-class-exercise-template/server:latest
+    image: ghcr.io/aet-devops26/in-class-exercise-template/server:latest
     build:
       context: ./server
       dockerfile: Dockerfile
@@ -19,7 +19,7 @@ services:
     restart: unless-stopped
 
   client:
-    image: ghcr.io/aet-devops25/in-class-exercise-template/client:latest
+    image: ghcr.io/aet-devops26/in-class-exercise-template/client:latest
     build:
       context: ./client
       dockerfile: Dockerfile

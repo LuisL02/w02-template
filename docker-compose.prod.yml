@@ -23,7 +23,7 @@ services:
       - ./letsencrypt:/letsencrypt
 
   server:
-    image: ghcr.io/aet-devops25/w03-template/server:${SERVER_VERSION:-latest}
+    image: ghcr.io/aet-devops26/w02-template/server:${SERVER_VERSION:-latest}
     container_name: in-class-exercise-server
     build:
       context: ./server
@@ -41,7 +41,7 @@ services:
     restart: unless-stopped
 
   client:
-    image: ghcr.io/aet-devops25/w03-template/client:${CLIENT_VERSION:-latest}
+    image: ghcr.io/aet-devops26/w02-template/client:${CLIENT_VERSION:-latest}
     container_name: in-class-exercise-client
     build:
       context: ./client

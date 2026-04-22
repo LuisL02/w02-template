@@ -1,16 +1,14 @@
-package de.tum.aet.devops25.w03;
+package de.tum.aet.devops26.w02;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.tum.aet.devops25.w03.model.Day;
-import de.tum.aet.devops25.w03.model.Dish;
-import de.tum.aet.devops25.w03.model.Week;
-import org.junit.jupiter.api.BeforeAll;
+import de.tum.aet.devops26.w02.model.Day;
+import de.tum.aet.devops26.w02.model.Dish;
+import de.tum.aet.devops26.w02.model.Week;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
@@ -22,13 +20,10 @@ import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
-import java.time.temporal.WeekFields;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

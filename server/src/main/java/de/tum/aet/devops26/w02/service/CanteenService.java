@@ -1,14 +1,13 @@
-package de.tum.aet.devops25.w03.service;
+package de.tum.aet.devops26.w02.service;
 
-import de.tum.aet.devops25.w03.model.Day;
-import de.tum.aet.devops25.w03.model.Dish;
-import de.tum.aet.devops25.w03.model.Week;
+import de.tum.aet.devops26.w02.model.Day;
+import de.tum.aet.devops26.w02.model.Dish;
+import de.tum.aet.devops26.w02.model.Week;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.Clock;
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.time.temporal.WeekFields;
 import java.util.List;
 import java.util.Locale;
